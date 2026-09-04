@@ -1,12 +1,9 @@
 # PixelPal
 
-PixelPal desktop application releases.
-
-Download the latest version from GitHub Releases.
+Official binary releases for PixelPal.
 
 Platforms:
-
 - Windows x64
 - macOS Apple Silicon
 
-Source code is not distributed through this repository.
+The PixelPal source code is maintained separately and is not distributed through this repository.

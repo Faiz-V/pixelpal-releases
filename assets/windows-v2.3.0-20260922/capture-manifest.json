@@ -1,0 +1,176 @@
+{
+  "product": "PixelPal",
+  "version": "2.3.0",
+  "releaseTag": "v2.3.0",
+  "sourceCommit": "a3f6606444a3a3a37a2360fbb5c3689e8eb003c8",
+  "captureDate": "2026-09-22",
+  "os": "Windows 11, build 22631, x64",
+  "electron": "43.6.0",
+  "runtime": "Unmodified release source in an isolated empty profile; normal prestart build. Not an installed-binary acceptance test.",
+  "privacy": "No provider keys, music account, private files or personal conversations. The reminder and memo are clearly labelled demonstration inputs entered through real controls.",
+  "limitations": [
+    "AI and DJ/music were not configured; no model response, Agent task completion or playback is demonstrated.",
+    "All captures are Windows. They do not establish macOS parity.",
+    "A transparent Electron window was captured without the surrounding desktop. Neutral background and external captions are presentation-only.",
+    "No AI-generated UI, mocked backend output or redrawn controls."
+  ],
+  "images": [
+    {
+      "file": "01-companion.png",
+      "sourceCapture": "01-companion.png",
+      "sourceSha256": "431d4e2f2fcf0f6efb90c8899f472b7c3db4d0ac87a4c0d409e697cefcd13865",
+      "sha256": "f0146a3090739186db7e4c1dfdb9165e43ee6426af72240a3d4adbc94aebc2b0",
+      "sourcePixels": [
+        1920,
+        1080
+      ],
+      "cropBox": [
+        1442,
+        905,
+        1640,
+        1020
+      ],
+      "outputPixels": [
+        246,
+        163
+      ],
+      "operations": "Crop transparent outer margins; add 24px neutral matte. No product UI pixels redrawn or hidden."
+    },
+    {
+      "file": "02-ai-unconfigured.png",
+      "sourceCapture": "02-ai-unconfigured.png",
+      "sourceSha256": "efb49c71902a089545d45e0f87fe24b1ee1758c3847fad11d4b0c281b0a14e15",
+      "sha256": "78d10db6b1a2b488627054f23b478ea062526faa4c5c97c5058bf41c22a86e39",
+      "sourcePixels": [
+        1920,
+        1080
+      ],
+      "cropBox": [
+        1246,
+        553,
+        1716,
+        1080
+      ],
+      "outputPixels": [
+        518,
+        575
+      ],
+      "operations": "Crop transparent outer margins; add 24px neutral matte. No product UI pixels redrawn or hidden."
+    },
+    {
+      "file": "03-workstation.png",
+      "sourceCapture": "03-workstation.png",
+      "sourceSha256": "ce9f337ad16d404341a6a388cb71a40b4b63404a4d4b60f4eb0014f77a47a0dd",
+      "sha256": "5a50f3184e081a90c8b08e1fb0ea39b7933d70bd1bb0f38a8f40840720f0f1d3",
+      "sourcePixels": [
+        1920,
+        1080
+      ],
+      "cropBox": [
+        1005,
+        320,
+        1508,
+        1080
+      ],
+      "outputPixels": [
+        551,
+        808
+      ],
+      "operations": "Crop transparent outer margins; add 24px neutral matte. No product UI pixels redrawn or hidden."
+    },
+    {
+      "file": "04-radio-hub.png",
+      "sourceCapture": "04-radio-hub.png",
+      "sourceSha256": "b4c6ae0c0a1a7495c9841de5af85ea2829e215dccbc55bda3acb7616dcd26b46",
+      "sha256": "050f038d5fb1fa70592da7a1a7fbe8658c71df2ef507a83db24a684576f968ab",
+      "sourcePixels": [
+        1920,
+        1080
+      ],
+      "cropBox": [
+        1143,
+        792,
+        1617,
+        1080
+      ],
+      "outputPixels": [
+        522,
+        336
+      ],
+      "operations": "Crop transparent outer margins; add 24px neutral matte. No product UI pixels redrawn or hidden."
+    },
+    {
+      "file": "05-pal-fm.png",
+      "sourceCapture": "05-pal-fm.png",
+      "sourceSha256": "0ed6909b4cf9688a80eb2bda3236f5cc335d483f2fc618c946ec5ff5c5cc7c46",
+      "sha256": "754bd1f261aa9ceda1533af6c72c60279ed3118d88b45608765658ae9add8ba1",
+      "sourcePixels": [
+        1920,
+        1080
+      ],
+      "cropBox": [
+        1140,
+        562,
+        1634,
+        1080
+      ],
+      "outputPixels": [
+        542,
+        566
+      ],
+      "operations": "Crop transparent outer margins; add 24px neutral matte. No product UI pixels redrawn or hidden."
+    },
+    {
+      "file": "pixelpal-hero.png",
+      "sha256": "6997532312795eca602b605b7709a323973ae87b13728ca9a36ce4b5843f6f57",
+      "outputPixels": [
+        1440,
+        840
+      ],
+      "sourceCapture": "02-ai-unconfigured.png",
+      "sourceSha256": "efb49c71902a089545d45e0f87fe24b1ee1758c3847fad11d4b0c281b0a14e15",
+      "operations": "Title/tagline/feature text and neutral canvas around a proportionally resized, unchanged real capture. This is a labelled promotional composition, not an unedited desktop screenshot. Provider-not-configured UI remains visible."
+    },
+    {
+      "file": "pixelpal-social-preview.png",
+      "sha256": "84be089dd8a3a17adf0bfc6787c6421f4c63aca11b0338748c4c72552ba85967",
+      "outputPixels": [
+        1200,
+        630
+      ],
+      "sourceCapture": "02-ai-unconfigured.png",
+      "sourceSha256": "efb49c71902a089545d45e0f87fe24b1ee1758c3847fad11d4b0c281b0a14e15",
+      "operations": "Title/tagline/feature text and neutral canvas around a proportionally resized, unchanged real capture. This is a labelled promotional composition, not an unedited desktop screenshot. Provider-not-configured UI remains visible."
+    }
+  ],
+  "demo": {
+    "flow": "Companion menu -> AI unconfigured -> Workstation -> type a demo memo -> companion menu",
+    "durationMs": 13248,
+    "capturedFrames": 67,
+    "cropBox": [
+      522,
+      292,
+      1109,
+      1080
+    ],
+    "outputPixels": [
+      588,
+      788
+    ],
+    "operations": "One continuous real interaction capture; constant crop encloses every non-transparent frame pixel, neutral matte, proportional resize and video encoding. Original capture timing retained; no invented frames, audio or responses.",
+    "files": [
+      {
+        "file": "pixelpal-walkthrough.mp4",
+        "bytes": 111912,
+        "sha256": "694f8534ec70cbf8e054279b7386caa55ce45db787a77a1eb39110f2626ec54b"
+      },
+      {
+        "file": "pixelpal-walkthrough.gif",
+        "bytes": 2096918,
+        "sha256": "f01741c8f5bd13c287ea89d752b42c783acffba7f99d4cd1b43a292af9a208f1"
+      }
+    ],
+    "mp4Encoding": "H.264/yuv420p, CRF 22, variable frame timing, silent, faststart",
+    "gifEncoding": "480px width, 256 colors, original timings rounded to GIF 10ms units, silent loop; MP4 preserves more detail."
+  }
+}

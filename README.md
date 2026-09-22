@@ -1,16 +1,42 @@
 # PixelPal
 
-A desktop companion that brings a pet, AI assistance, a workstation and music into one personal workspace.
+**AI companion for your desktop.** A desktop pet with AI, a Workstation and Pal FM — plus PixelPal Play in your browser.
 
-中文简介：PixelPal 是将桌宠、AI、工作站和音乐结合在一起的桌面产品；本仓库提供官方介绍、安装包和反馈入口。
+![PixelPal's real Windows companion and AI panel, with the unconfigured provider state visible](assets/windows-v2.3.0-20260922/pixelpal-hero.png)
 
-**[Download](#download) · [Product & setup guide](https://play.levius.com.cn/pixelpal/) · [Try PixelPal Play](https://play.levius.com.cn/) · [Feedback](https://github.com/Faiz-V/pixelpal-releases/issues)**
+**[Download for Windows · v2.3.0](https://github.com/Faiz-V/pixelpal-releases/releases/download/v2.3.0/PixelPal-Windows-x64-Setup.exe)** · **[Download for macOS arm64 · v2.0.0 Previous Stable](https://github.com/Faiz-V/pixelpal-releases/releases/download/v2.0.0/PixelPal-macOS-arm64.dmg)** · **[Try PixelPal Play](https://play.levius.com.cn/)**
 
-## Product demo
+- **A companion on your desktop** — an animated pet with quick access to the things you use.
+- **AI + Workstation** — bring your own AI provider; keep reminders and a Memo close at hand.
+- **Pal FM** — music from your supported account, with optional DJ voice transitions.
+- **Play together** — open the separate multiplayer browser experience without installing the desktop app.
 
-Explore the [desktop product page](https://play.levius.com.cn/pixelpal/) for an overview and configuration instructions. The separate [PixelPal Play web experience](https://play.levius.com.cn/) can be opened in a browser without installing the desktop app.
+中文简介：一个把桌宠、AI、工作站和音乐放在一起的桌面产品，也有独立的联机小游戏入口。Windows 与 macOS 的版本和验证范围不同，详见下方支持表。
 
-Current-version desktop screenshots and a short recorded walkthrough are still to be added. The [media checklist](assets/README.md) describes the real captures needed; no generated product screenshots are used here.
+## See it in action
+
+**[Watch the 13-second real walkthrough · MP4](assets/windows-v2.3.0-20260922/pixelpal-walkthrough.mp4)** · [Animated GIF](assets/windows-v2.3.0-20260922/pixelpal-walkthrough.gif) · [Setup guide](https://play.levius.com.cn/pixelpal/#setup-guides)
+
+Companion → AI panel → Workstation → type a demo Memo → back to the companion. This shows real UI navigation and a saved local note. AI and music/DJ providers are unconfigured: no model response, Agent task completion or music playback is demonstrated.
+
+Captured on Windows on **2026-09-22**, running the unchanged **v2.3.0 release source commit** with Electron 43.6.0 in a fresh profile. These are source-run captures, not an installed-binary acceptance test or macOS evidence. The transparent product window is shown on a neutral background; the Hero adds a title around the unchanged UI. [Capture details and hashes](assets/windows-v2.3.0-20260922/capture-manifest.json).
+
+<details>
+<summary>Five real Windows screenshots</summary>
+
+| Companion and quick actions | AI panel — provider not configured |
+|---|---|
+| ![Real desktop companion and quick actions](assets/windows-v2.3.0-20260922/01-companion.png) | ![Actual AI panel, with Not configured visible](assets/windows-v2.3.0-20260922/02-ai-unconfigured.png) |
+
+| Workstation — a clearly labelled demo reminder and Memo | Pal FM — fresh profile, no playback |
+|---|---|
+| ![Real Workstation with non-private demo inputs](assets/windows-v2.3.0-20260922/03-workstation.png) | ![Pal FM's actual initial interface; no music or DJ session active](assets/windows-v2.3.0-20260922/05-pal-fm.png) |
+
+![Radio hub with FlowPal, Pal FM and PixelWave entries](assets/windows-v2.3.0-20260922/04-radio-hub.png)
+
+No API keys, personal files, private conversations or music account details were used. [Media notes and remaining capture gaps](assets/README.md).
+
+</details>
 
 ## Core experiences
 

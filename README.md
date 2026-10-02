@@ -4,7 +4,7 @@
 
 ![PixelPal's real Windows companion and AI panel, with the unconfigured provider state visible](assets/windows-v2.3.0-20260922/pixelpal-hero.png)
 
-**[Download for Windows · v2.3.0](https://github.com/Faiz-V/pixelpal-releases/releases/download/v2.3.0/PixelPal-Windows-x64-Setup.exe)** · **[Download for macOS arm64 · v2.0.0 Previous Stable](https://github.com/Faiz-V/pixelpal-releases/releases/download/v2.0.0/PixelPal-macOS-arm64.dmg)** · **[Try PixelPal Play](https://play.levius.com.cn/)**
+**[Download for Windows · v2.3.1](https://github.com/Faiz-V/pixelpal-releases/releases/download/v2.3.1/PixelPal-Windows-x64-Setup.exe)** · **[Download for macOS arm64 · v2.0.0 Previous Stable](https://github.com/Faiz-V/pixelpal-releases/releases/download/v2.0.0/PixelPal-macOS-arm64.dmg)** · **[Try PixelPal Play](https://play.levius.com.cn/)**
 
 - **A companion on your desktop** — an animated pet with quick access to the things you use.
 - **AI + Workstation** — bring your own AI provider; keep reminders and a Memo close at hand.
@@ -41,28 +41,28 @@ No API keys, personal files, private conversations or music account details were
 ## Core experiences
 
 - **Desktop Companion** — an animated desktop pet and a personal desktop panel.
-- **AI** — connect your own supported model provider. Windows v2.3.0 retains Memo and bounded document/OCR summaries; availability depends on your configuration and provider.
-- **Workstation / Agent Experience** — on Windows v2.3.0, combine supported PixelPal actions into a goal. Agent Activity shows progress, cancellation and completed, partial or failed outcomes. Tidy requires confirmation. This is bounded in-app assistance, not arbitrary Windows or file control.
+- **AI** — connect your own supported model provider. Windows v2.3.1 retains Memo and bounded document/OCR summaries; availability depends on your configuration and provider.
+- **Workstation / Agent Experience** — on Windows v2.3.1, combine supported PixelPal actions into a goal. Agent Activity shows progress, cancellation and completed, partial or failed outcomes. Tidy requires confirmation. This is bounded in-app assistance, not arbitrary Windows or file control.
 - **Pal FM / DJ** — music playback with your own supported sources, plus optional voice transitions through your Fish Audio configuration. Pal FM playback and FlowPal source management are distinct. Session Music Policy can be queried, paused or cancelled and yields to manual actions; long-term policies and named routines are not included.
 - **PixelPal Play** — a separate browser multiplayer experience, linked from the product ecosystem. It uses an online room service; it is not an offline desktop feature or a source release in this repository.
 
 ## Windows and macOS support
 
-Release inventory checked on **2026-09-22**. Versions differ by platform.
+Release inventory checked on **2026-10-02**. Versions differ by platform.
 
 | Platform | Published download | Evidence and limits |
 |---|---|---|
-| Windows x64 | **v2.3.0** | Current stable Windows release. Published release evidence covers Agent Experience and the retained Windows security/runtime work. Unsigned installer. |
+| Windows x64 | **v2.3.1** | Current stable Windows release. Published evidence covers Agent Routing, Pal FM startup and playback, and retained Windows security/runtime work. Unsigned installer. |
 | macOS Apple Silicon (arm64) | **v2.0.0 — Previous Stable** | Existing DMG. Agent Foundation and Agent Experience are **NOT VALIDATED**; Security Modernization is **NOT YET VALIDATED** on macOS. Ad-hoc integrity seal, no Developer ID, not notarized. |
 | Intel Mac / Linux / other architectures | No asset listed | No compatible build is distributed here. |
 
-Do not assume Windows feature parity on macOS. The v2.3.0 release did not produce or replace a macOS binary.
+Do not assume Windows feature parity on macOS. The v2.3.1 release did not produce or replace a macOS binary.
 
 ## Download
 
 | Platform | Installer | Release notes and integrity evidence |
 |---|---|---|
-| Windows x64 | [PixelPal-Windows-x64-Setup.exe · v2.3.0](https://github.com/Faiz-V/pixelpal-releases/releases/download/v2.3.0/PixelPal-Windows-x64-Setup.exe) | [Release](https://github.com/Faiz-V/pixelpal-releases/releases/tag/v2.3.0) · [SHA256SUMS](https://github.com/Faiz-V/pixelpal-releases/releases/download/v2.3.0/SHA256SUMS.txt) · [Manifest](https://github.com/Faiz-V/pixelpal-releases/releases/download/v2.3.0/release-manifest.json) |
+| Windows x64 | [PixelPal-Windows-x64-Setup.exe · v2.3.1](https://github.com/Faiz-V/pixelpal-releases/releases/download/v2.3.1/PixelPal-Windows-x64-Setup.exe) | [Release](https://github.com/Faiz-V/pixelpal-releases/releases/tag/v2.3.1) · [SHA256SUMS](https://github.com/Faiz-V/pixelpal-releases/releases/download/v2.3.1/SHA256SUMS.txt) · [Manifest](https://github.com/Faiz-V/pixelpal-releases/releases/download/v2.3.1/release-manifest.json) |
 | macOS arm64 | [PixelPal-macOS-arm64.dmg · v2.0.0](https://github.com/Faiz-V/pixelpal-releases/releases/download/v2.0.0/PixelPal-macOS-arm64.dmg) | [Release](https://github.com/Faiz-V/pixelpal-releases/releases/tag/v2.0.0) · [SHA256SUMS](https://github.com/Faiz-V/pixelpal-releases/releases/download/v2.0.0/SHA256SUMS.txt) · [Manifest](https://github.com/Faiz-V/pixelpal-releases/releases/download/v2.0.0/release-manifest.json) |
 
 These links are version-pinned so the macOS button does not point at a Windows-only latest release. For older builds, use [all Releases](https://github.com/Faiz-V/pixelpal-releases/releases). GitHub's automatically generated “Source code” archives contain this repository's documentation, not the PixelPal application source.
@@ -92,13 +92,15 @@ AI uses your own provider account and API key. DJ is optional and uses your own 
    shasum -a 256 PixelPal-macOS-arm64.dmg
    ```
 
+For unattended Windows installation, use `PixelPal-Windows-x64-Setup.exe /currentuser /S`. The release gate verified this explicit per-user mode; plain `/S` failed during automatic install-scope selection on the current Windows 2025 hosted runner image. Interactive installation remains the normal path above.
+
 3. Compare the full hash with the corresponding filename in the sums file. A checksum checks file integrity; it is not a publisher signature or a malware assessment.
 4. On Windows, run the installer and follow its prompts. On macOS, open the DMG and install the app. The [installation guide](https://play.levius.com.cn/pixelpal/) explains the unsigned-build prompts. Any decision to allow an unsigned app stays with you; do not disable operating-system protections globally.
 5. Open PixelPal, then configure optional AI, music and DJ services as needed. AI or DJ credentials are not required just to launch the desktop companion.
 
 ## Safety and privacy
 
-Windows v2.3.0's release notes describe sandboxed renderers, narrowly validated capabilities, bounded requests/streams and DPAPI-protected credentials. These Windows guarantees must not be applied to the older macOS build.
+Windows v2.3.1's release notes describe sandboxed renderers, narrowly validated capabilities, bounded requests/streams and DPAPI-protected credentials. These Windows guarantees must not be applied to the older macOS build.
 
 AI prompts and selected document content may be sent to the provider you configure. Music login/playback and DJ synthesis involve their respective external services. PixelPal Play exchanges room/game data with its server. The product is therefore not wholly offline, and provider data policies still apply.
 
@@ -106,9 +108,9 @@ Never post API keys, cookies, session files, local configuration, personal docum
 
 ## Current version differences and verification
 
-[Windows v2.3.0 release notes](https://github.com/Faiz-V/pixelpal-releases/releases/tag/v2.3.0) describe Agent Experience on top of Agent Foundation, Memo, document/OCR summaries, music sources, FM/DJ, volume, background playback and mini-bar interaction. General Windows automation, long-term policy and named routines remain outside this release.
+[Windows v2.3.1 release notes](https://github.com/Faiz-V/pixelpal-releases/releases/tag/v2.3.1) describe model-first Talk, canonical conversation, bounded Agent tool correction, and Pal FM startup/playback recovery on top of the retained Agent Experience, Memo, document/OCR, music, volume and background playback capabilities. General Windows automation, long-term policy and named routines remain outside this release.
 
-The release includes a [regression summary](https://github.com/Faiz-V/pixelpal-releases/releases/download/v2.3.0/release-regression-summary.json) and [installation gate evidence](https://github.com/Faiz-V/pixelpal-releases/releases/download/v2.3.0/windows-install-gate.json). These are published release records, not a claim that every platform or external provider was re-tested during this documentation update. A downloadable asset alone does not establish feature parity.
+The release includes a [regression summary](https://github.com/Faiz-V/pixelpal-releases/releases/download/v2.3.1/release-regression-summary.json) and [installation gate evidence](https://github.com/Faiz-V/pixelpal-releases/releases/download/v2.3.1/windows-install-gate.json). The [final Production smoke](https://github.com/Faiz-V/pixelpal-releases/releases/download/v2.3.1/production-smoke-summary.json) covers bounded real DeepSeek and music use, first-attempt Pal FM, daily recommendations, playback controls, Workstation and clean exit. Fish/DJ inference and macOS were not re-tested for this release. A downloadable asset alone does not establish feature parity.
 
 ## Feedback / Issues
 

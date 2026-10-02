@@ -92,7 +92,7 @@ AI uses your own provider account and API key. DJ is optional and uses your own 
    shasum -a 256 PixelPal-macOS-arm64.dmg
    ```
 
-For unattended Windows installation, use `PixelPal-Windows-x64-Setup.exe /currentuser /S`. The release gate verified this explicit per-user mode; plain `/S` failed during automatic install-scope selection on the current Windows 2025 hosted runner image. Interactive installation remains the normal path above.
+For unattended Windows installation, use `PixelPal-Windows-x64-Setup.exe /currentuser /S`. The release gate verified this explicit per-user mode; plain `/S` exited with 0xC0000005 before creating an install record on the current Windows 2025 hosted runner image. The underlying crash cause was not diagnosed. Interactive installation remains the normal path above.
 
 3. Compare the full hash with the corresponding filename in the sums file. A checksum checks file integrity; it is not a publisher signature or a malware assessment.
 4. On Windows, run the installer and follow its prompts. On macOS, open the DMG and install the app. The [installation guide](https://play.levius.com.cn/pixelpal/) explains the unsigned-build prompts. Any decision to allow an unsigned app stays with you; do not disable operating-system protections globally.
